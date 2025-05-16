@@ -101,7 +101,7 @@ const SecondaryCTA = styled(motion.a)`
   gap: 0.5rem;
   transition: all 0.3s ease;
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
     transform: translateY(-3px);
   }
 `;
