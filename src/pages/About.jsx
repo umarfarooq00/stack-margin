@@ -13,7 +13,7 @@ const Container = styled.div`
 const About = () => {
   return (
     <Container>
-      <h1>About Page</h1>
+      <h1>About Us</h1>
     </Container>
   );
 };
