@@ -32,9 +32,9 @@ const HeroContainer = styled.section`
 `;
 
 const ContentWrapper = styled.div`
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
-  padding-inline: 1rem;
+  padding-inline: 2rem;
   box-sizing: border-box;
   margin-inline: auto;
   display: flex;

@@ -11,9 +11,9 @@ const ServicesContainer = styled.section`
 `;
 
 const ServicesContent = styled.div`
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 0 auto;
 `;
 
@@ -44,7 +44,7 @@ const SectionSubtitle = styled(motion.p)`
 
 const ServicesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
 `;
 

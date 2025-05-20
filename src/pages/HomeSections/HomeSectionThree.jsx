@@ -37,7 +37,8 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
-  max-width: 1200px;
+  max-width: 1400px;
+  padding-inline: 2rem;
   margin: 0 auto;
   position: relative;
   z-index: 2;

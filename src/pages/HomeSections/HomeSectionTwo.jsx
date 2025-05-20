@@ -28,10 +28,11 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  padding-inline: 2rem;
 `;
 
 const Headline = styled(motion.h2)`

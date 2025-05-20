@@ -14,9 +14,9 @@ const AboutContainer = styled.section`
 `;
 
 const ContentWrapper = styled.div`
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -74,7 +74,7 @@ const FounderCard = styled(motion.div)`
   padding: 2rem;
   border: 1px solid rgba(142, 45, 226, 0.3);
   backdrop-filter: blur(10px);
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
 `;
 

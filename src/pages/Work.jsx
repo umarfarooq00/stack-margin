@@ -13,9 +13,9 @@ const ResultsContainer = styled.section`
 `;
 
 const ResultsContent = styled.div`
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 0 auto;
 `;
 
@@ -25,7 +25,7 @@ const SectionHeader = styled.div`
 `;
 
 const SectionTitle = styled(motion.h2)`
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   margin-bottom: 1rem;
   background: linear-gradient(to right, #ffffff, #e0e0e0);
@@ -77,7 +77,7 @@ const MetricLabel = styled.p`
 `;
 
 const TestimonialCard = styled(motion.div)`
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   background: rgba(26, 26, 46, 0.6);
   border-radius: 16px;
