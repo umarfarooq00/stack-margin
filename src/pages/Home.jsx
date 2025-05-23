@@ -26,9 +26,9 @@ const HeroContainer = styled.section`
   animation: ${gradientBackground} 15s ease infinite;
   color: white;
 
-  // @media (max-width: 1024px) {
-  //   z-index: -2;
-  // }
+@media screen and (max-width: 767px) {
+  padding-block: 50px;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -40,6 +40,11 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media screen and (max-width: 767px) {
+  padding-inline: 1rem;
+  gap: 1rem;
+  }
 `;
 
 const Headline = styled(motion.h1)`
@@ -53,6 +58,10 @@ const Headline = styled(motion.h1)`
   color: transparent;
   text-transform: uppercase;
   letter-spacing: 1px;
+   @media screen and (max-width: 767px) {
+  font-size: clamp(2rem, 5vw, 5rem);
+  text-align: center;
+  }
 `;
 
 const Subheadline = styled(motion.p)`
@@ -61,6 +70,10 @@ const Subheadline = styled(motion.p)`
   line-height: 1.6;
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
+   @media screen and (max-width: 767px) {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-align: center;
+  }
 `;
 
 const CTAWrapper = styled(motion.div)`
@@ -68,6 +81,9 @@ const CTAWrapper = styled(motion.div)`
   gap: 1.5rem;
   margin-top: 2rem;
   flex-wrap: wrap;
+   @media screen and (max-width: 767px) {
+ margin-top: 1rem;
+  }
 `;
 
 const PrimaryCTA = styled(motion.a)`
@@ -85,6 +101,10 @@ const PrimaryCTA = styled(motion.a)`
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 30px rgba(74, 0, 224, 0.4);
+  }
+     @media screen and (max-width: 450px) {
+  width: 100%;
+  justify-content: center;
   }
 `;
 
@@ -104,6 +124,11 @@ const SecondaryCTA = styled(motion.a)`
     background: linear-gradient(45deg, #8e2de2, #4a00e0);
     transform: translateY(-3px);
   }
+ @media screen and (max-width: 450px) {
+  width: 100%;
+  justify-content: center;
+  }
+  
 `;
 
 const Home = () => {

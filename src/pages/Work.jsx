@@ -10,6 +10,9 @@ const ResultsContainer = styled.section`
   background-size: 400% 400%;
   color: white;
   overflow: hidden;
+   @media screen and (max-width: 767px) {
+ padding: 50px 0;
+  }
 `;
 
 const ResultsContent = styled.div`
@@ -17,11 +20,17 @@ const ResultsContent = styled.div`
   width: 100%;
   padding: 0 2rem;
   margin: 0 auto;
+   @media screen and (max-width: 767px) {
+ padding: 0 1rem;
+  }
 `;
 
 const SectionHeader = styled.div`
   text-align: center;
   margin-bottom: 4rem;
+   @media screen and (max-width: 767px) {
+margin-bottom: 2rem;
+  }
 `;
 
 const SectionTitle = styled(motion.h2)`
@@ -49,6 +58,10 @@ const MetricsGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-bottom: 5rem;
+   @media screen and (max-width: 767px) {
+margin-bottom: 2rem;
+gap: 1rem;
+  }
 `;
 
 const MetricCard = styled(motion.div)`

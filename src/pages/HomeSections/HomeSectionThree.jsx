@@ -34,6 +34,9 @@ const Section = styled.section`
   animation: ${gradientFlow} 15s ease infinite;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+  padding: 50px 1rem;
+  }
 `;
 
 const Container = styled.div`
@@ -42,6 +45,9 @@ const Container = styled.div`
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  @media screen and (max-width: 767px) {
+  padding: 0;
+  }
 `;
 
 const Headline = styled(motion.h2)`
@@ -54,6 +60,9 @@ const Headline = styled(motion.h2)`
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  @media screen and (max-width: 767px) {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  }
 `;
 
 const Subheadline = styled(motion.p)`
@@ -63,6 +72,9 @@ const Subheadline = styled(motion.p)`
   max-width: 800px;
   margin: 0 auto 4rem;
   line-height: 1.6;
+   @media screen and (max-width: 767px) {
+  margin: 0 auto 2rem;
+  }
 `;
 
 const FlexWrapper = styled.div`
@@ -72,6 +84,9 @@ const FlexWrapper = styled.div`
   //   align-items: stretch;
   gap: 1rem;
   margin-top: 3rem;
+   @media screen and (max-width: 767px) {
+  margin: 0;
+  }
 `;
 
 const FlexItem = styled(motion.div)`

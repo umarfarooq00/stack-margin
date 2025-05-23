@@ -9,6 +9,9 @@ const ContactContainer = styled.section`
   padding: 100px 0;
   background: linear-gradient(-45deg, #0f0c29, #1a1a2e, #16213e, #1a1a2e);
   color: white;
+   @media screen and (max-width: 767px) {
+ padding: 50px 0;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -20,6 +23,9 @@ const ContentWrapper = styled.div`
 const SectionHeader = styled.div`
   text-align: center;
   margin-bottom: 50px;
+   @media screen and (max-width: 767px) {
+margin-bottom: 2rem;
+  }
 `;
 
 const SectionTitle = styled(motion.h2)`
@@ -44,6 +50,9 @@ const ContactForm = styled.form`
   padding: 40px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+   @media screen and (max-width: 767px) {
+ padding: 2rem 1rem;
+  }
 `;
 
 const FormGroup = styled.div`

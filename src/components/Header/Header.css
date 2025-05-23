@@ -209,3 +209,9 @@ body.menu-open {
 .mobile-nav div:nth-child(5) {
   animation-delay: 0.5s;
 }
+
+@media screen and (max-width: 767px) {
+  .header-container {
+    padding: 1rem;
+  }
+}

@@ -25,6 +25,9 @@ const Section = styled.section`
   background-size: 400% 400%;
   animation: ${gradientFlow} 20s ease infinite;
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+  padding: 50px 1rem;
+  }
 `;
 
 const Container = styled.div`
@@ -33,6 +36,9 @@ const Container = styled.div`
   position: relative;
   z-index: 2;
   padding-inline: 2rem;
+  @media screen and (max-width: 767px) {
+  padding: 0;
+  }
 `;
 
 const Headline = styled(motion.h2)`
@@ -43,6 +49,9 @@ const Headline = styled(motion.h2)`
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 2rem;
+  @media screen and (max-width: 767px) {
+font-size: clamp(2rem, 6vw, 4rem);
+  }
 `;
 
 const Subheadline = styled(motion.p)`
@@ -52,12 +61,18 @@ const Subheadline = styled(motion.p)`
   max-width: 900px;
   margin: 0 auto 5rem;
   line-height: 1.8;
+  @media screen and (max-width: 767px) {
+  margin: 0 auto 2rem;
+  }
 `;
 
 const PillarsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
+  @media screen and (max-width: 767px) {
+  gap: 1rem;
+  }
 `;
 
 const PillarCard = styled(motion.div)`
@@ -70,6 +85,9 @@ const PillarCard = styled(motion.div)`
   position: relative;
   overflow: hidden;
   z-index: 1;
+  @media screen and (max-width: 767px) {
+  padding: 2rem 1rem;
+  }
 
   &::before {
     content: "";
@@ -107,6 +125,11 @@ const PillarIcon = styled.div`
   background: linear-gradient(45deg, #8e2de2, #4a00e0);
   margin-bottom: 2rem;
   animation: ${secondFloat} 6s ease-in-out infinite;
+  @media screen and (max-width: 767px) {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1rem;
+  }
 `;
 
 // const PillarTitle = styled.h3`
@@ -122,12 +145,19 @@ const PillarTitle = styled.h3`
   color: white;
   margin-bottom: 1rem;
   letter-spacing: 0.5px;
+  @media screen and (max-width: 767px) {
+  font-size: 1rem;
+  }
 `;
 
 const PillarDescription = styled.p`
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.05rem;
   line-height: 1.7;
+  @media screen and (max-width: 767px) {
+  font-size: 1rem;
+  line-height; 1rem;
+  }
 `;
 
 const Orb = styled.div`

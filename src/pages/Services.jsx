@@ -8,6 +8,9 @@ const ServicesContainer = styled.section`
   padding: 100px 0;
   background: #0f0c29;
   color: white;
+   @media screen and (max-width: 767px) {
+ padding: 50px 0;
+  }
 `;
 
 const ServicesContent = styled.div`
@@ -15,11 +18,17 @@ const ServicesContent = styled.div`
   width: 100%;
   padding: 0 2rem;
   margin: 0 auto;
+   @media screen and (max-width: 767px) {
+ padding: 0 1rem;
+  }
 `;
 
 const SectionHeader = styled.div`
   text-align: center;
   margin-bottom: 4rem;
+   @media screen and (max-width: 767px) {
+ margin-bottom: 2rem;
+  }
 `;
 
 const SectionTitle = styled(motion.h2)`
@@ -32,6 +41,9 @@ const SectionTitle = styled(motion.h2)`
   color: transparent;
   text-transform: uppercase;
   letter-spacing: 1px;
+   @media screen and (max-width: 767px) {
+margin-bottom: 1rem;
+  }
 `;
 
 const SectionSubtitle = styled(motion.p)`
@@ -46,6 +58,9 @@ const ServicesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
+   @media screen and (max-width: 767px) {
+gap: 1rem;
+  }
 `;
 
 const ServiceCard = styled(motion.div)`
@@ -61,6 +76,9 @@ const ServiceCard = styled(motion.div)`
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border-color: rgba(142, 45, 226, 0.5);
   }
+     @media screen and (max-width: 767px) {
+ padding: 2rem 1rem;
+  }
 `;
 
 const ServiceIcon = styled.div`
@@ -74,6 +92,9 @@ const ServiceTitle = styled.h3`
   font-weight: 700;
   margin-bottom: 1rem;
   color: white;
+   @media screen and (max-width: 767px) {
+font-size: 1rem;
+  }
 `;
 
 const ServiceDescription = styled.ul`

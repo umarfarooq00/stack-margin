@@ -11,6 +11,9 @@ const AboutContainer = styled.section`
   color: white;
   position: relative;
   overflow: hidden;
+   @media screen and (max-width: 767px) {
+ padding: 50px 0;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -20,11 +23,17 @@ const ContentWrapper = styled.div`
   margin: 0 auto;
   position: relative;
   z-index: 2;
+   @media screen and (max-width: 767px) {
+ padding: 0 1rem;
+  }
 `;
 
 const SectionHeader = styled.div`
   text-align: center;
   margin-bottom: 4rem;
+   @media screen and (max-width: 767px) {
+margin-bottom: 2rem;
+  }
 `;
 
 const SectionTitle = styled(motion.h2)`
@@ -56,6 +65,7 @@ const AboutContent = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 `;
 
@@ -65,6 +75,9 @@ const AboutText = styled.div`
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 1.5rem;
+     @media screen and (max-width: 767px) {
+text-align: center;
+  }
   }
 `;
 
@@ -120,6 +133,10 @@ const ExpertiseGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 3rem;
+   @media screen and (max-width: 767px) {
+gap; 1rem;
+margin-top: 2rem;
+  }
 `;
 
 const ExpertiseCard = styled(motion.div)`
