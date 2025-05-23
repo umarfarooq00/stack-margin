@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 import "./Header.css";
 
 const Header = () => {
